@@ -8,3 +8,7 @@ export * from './lib/index';
 
 // Authentication services
 export * from './lib/auth';
+
+// Payment services and models
+export * from './lib/payment/payment.models';
+export * from './lib/payment/payment-stepper.service';

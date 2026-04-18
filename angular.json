@@ -8,18 +8,18 @@
   "projects": {
     "vcb-shared-libs": {
       "projectType": "library",
-      "root": "projects/vcb-shared-libs",
-      "sourceRoot": "projects/vcb-shared-libs/src",
+      "root": "",
+      "sourceRoot": "src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular/build:ng-packagr",
           "configurations": {
             "production": {
-              "tsConfig": "projects/vcb-shared-libs/tsconfig.lib.prod.json"
+              "tsConfig": "tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/vcb-shared-libs/tsconfig.lib.json"
+              "tsConfig": "tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular/build:unit-test",
           "options": {
-            "tsConfig": "projects/vcb-shared-libs/tsconfig.spec.json"
+            "tsConfig": "tsconfig.spec.json"
           }
         }
       }

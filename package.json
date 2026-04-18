@@ -1,6 +1,6 @@
 {
   "name": "vcb-shared-libs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,15 +11,17 @@
   "private": true,
   "packageManager": "npm@11.12.1",
   "dependencies": {
+    "@babel/runtime": "^7.23.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
     "@angular/common": "^21.2.0",
     "@angular/compiler": "^21.2.0",
     "@angular/core": "^21.2.0",
     "@angular/forms": "^21.2.0",
     "@angular/platform-browser": "^21.2.0",
-    "@angular/router": "^21.2.0",
-    "@babel/runtime": "^7.24.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "@angular/router": "^21.2.0"
   },
   "devDependencies": {
     "@angular/build": "^21.2.7",

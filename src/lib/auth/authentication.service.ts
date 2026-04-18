@@ -281,7 +281,7 @@ export class AuthenticationService {
               id: credentials.userId,
               email: `${credentials.userId}@banking.app`,
               fullName: credentials.userId.toUpperCase(),
-              roles: ['USER', 'PAYMENTS_VIEW']
+              roles: ['USER', 'PAYMENTS_VIEW', 'ACCOUNTS_VIEW', 'CLIENTS_VIEW']
             }
           };
           this.handleAuthSuccess(response);

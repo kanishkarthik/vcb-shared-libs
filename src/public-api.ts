@@ -12,3 +12,6 @@ export * from './lib/auth';
 // Payment services and models
 export * from './lib/payment/payment.models';
 export * from './lib/payment/payment-stepper.service';
+
+// Runtime configuration
+export * from './lib/config/runtime-config.service';

@@ -157,7 +157,7 @@ export class PaymentStepperService {
       const nextStep = (currentStep - 1) as 1 | 2 | 3;
       this.currentStepSignal.set(nextStep);
       this.updateState();
-      const paymentMethod = this.paymentStateSignal().step1?.selectedPaymentMethod;
+      const paymentMethod = this.paymentStateSignal().step1?.selectedPaymentMethod?.toLowerCase();
       if (nextStep === 2 && paymentMethod) {
         this.router.navigate([`/payments/create-payment/step/${nextStep}/${paymentMethod.toLowerCase()}`]);
       } else {

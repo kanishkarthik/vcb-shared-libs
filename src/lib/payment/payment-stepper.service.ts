@@ -139,9 +139,9 @@ export class PaymentStepperService {
       this.updateState();
       const paymentMethod = this.paymentStateSignal().step1?.selectedPaymentMethod;
       if (nextStep === 2 && paymentMethod) {
-        this.router.navigate([`/payments/create-payment/step/${nextStep}/${paymentMethod.toLowerCase()}`]);
+        this.router.navigate([`/payments/create-payment/step/${nextStep}/${paymentMethod.toLowerCase()}`], { state: { reset: false } });
       } else {
-        this.router.navigate([`/payments/create-payment/step/${nextStep}`]);
+        this.router.navigate([`/payments/create-payment/step/${nextStep}`], { state: { reset: false } });
       }
       return true;
     }
@@ -159,9 +159,9 @@ export class PaymentStepperService {
       this.updateState();
       const paymentMethod = this.paymentStateSignal().step1?.selectedPaymentMethod?.toLowerCase();
       if (nextStep === 2 && paymentMethod) {
-        this.router.navigate([`/payments/create-payment/step/${nextStep}/${paymentMethod.toLowerCase()}`]);
+        this.router.navigate([`/payments/create-payment/step/${nextStep}/${paymentMethod.toLowerCase()}`], { state: { reset: false } });
       } else {
-        this.router.navigate([`/payments/create-payment/step/${nextStep}`]);
+        this.router.navigate([`/payments/create-payment/step/${nextStep}`], { state: { reset: false } });
       }
       return true;
     }
